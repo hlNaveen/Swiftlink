@@ -24,7 +24,7 @@ Table of Contents
 Installation
 Clone the Repository
 
-          git clone https://github.com/your-username/swiftlink.git
+          git clone https://github.com/hlnaveen/swiftlink.git
           cd swiftlink  
 
 Set Up a Virtual Environment (Optional)
