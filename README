@@ -1,0 +1,94 @@
+SwiftLink Protocol
+
+Overview
+
+    SwiftLink is a lightweight and advanced network communication protocol designed for secure, efficient, and reliable data transmission between devices.
+    The protocol features custom encryption, checksum validation, and message authentication, making it ideal for applications where security and performance are critical.
+
+Features
+
+    Custom XOR Encryption: Ensures that the data is securely transmitted over the network.
+    Checksum Validation: Guarantees the integrity of the message by verifying that the data has not been altered during transmission.
+    Message Authentication Code (MAC): Provides an additional layer of security by verifying the authenticity of the message.
+    Lightweight and Fast: Designed to be simple and efficient, with minimal overhead.
+
+Table of Contents
+
+            Installation
+            Usage
+            Examples
+            Testing
+            Contributing
+            License
+
+Installation
+Clone the Repository
+
+          git clone https://github.com/your-username/swiftlink.git
+          cd swiftlink  
+
+Set Up a Virtual Environment (Optional)
+It's recommended to use a virtual environment to keep dependencies isolated.
+
+          # On Windows
+          python -m venv venv
+          .\venv\Scripts\activate
+          
+          # On macOS/Linux
+          python3 -m venv venv
+          source venv/bin/activate
+
+Install Dependencies :              pip install -r requirements.txt
+If no external dependencies are required, this step can be skipped.
+
+
+Usage
+Running the SwiftLink Server
+To start the SwiftLink server:      python examples/example_server.py
+
+
+Running the SwiftLink Client
+To send a message using the SwiftLink client:        python examples/example_client.py
+
+
+The client will send a message to the server and display the server's response.
+
+Examples
+Server
+The server listens for incoming messages and responds with an acknowledgment message.
+
+                  from src.swiftlink_server import swiftlink_server
+            
+                  if __name__ == "__main__":
+                      swiftlink_server('127.0.0.1', 5000)
+
+Client
+The client sends a message to the server and processes the server's response.
+
+                from src.swiftlink_client import swiftlink_client
+                
+                if __name__ == "__main__":
+                    swiftlink_client('127.0.0.1', 5000, 1, 1)
+
+
+Testing
+Unit tests are provided to ensure that the SwiftLink protocol functions as expected.
+
+Running Tests        python -m unittest discover tests
+
+This command will run all tests in the tests/ directory and provide output on their status.
+
+
+Contributing
+We welcome contributions to SwiftLink! If you have suggestions, bug reports, or would like to contribute code, please follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Commit your changes.
+Push your branch and submit a pull request.
+Please ensure your code adheres to the existing style and passes all tests before submitting a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+                 
+
