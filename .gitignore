@@ -1,0 +1,13 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore test results
+test-results/
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore other system files
+.DS_Store
