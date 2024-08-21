@@ -105,13 +105,7 @@ Running Tests        python -m unittest discover tests
 This command will run all tests in the tests/ directory and provide output on their status.
 
 
-Contributing
-We welcome contributions to SwiftLink! If you have suggestions, bug reports, or would like to contribute code, please follow these steps:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Commit your changes.
-Push your branch and submit a pull request.
-Please ensure your code adheres to the existing style and passes all tests before submitting a pull request.
+
 
 
